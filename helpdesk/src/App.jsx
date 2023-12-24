@@ -13,7 +13,7 @@ function App() {
 
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000")
+    fetch("http://127.0.0.1:5000/home")
       .then(res => res.json())
       .then(
         (result) => {
@@ -39,13 +39,13 @@ return(
  
 <form action="http://127.0.0.1:5000/home" method="GET">
 
-<label className='lbemail'><span class="material-symbols-outlined">
+<label className='lbemail'><span className="material-symbols-outlined">
 person
 </span><input type='email' className='input'></input></label>
 
 <br></br>
 <br></br>
-<label className='lbpasswd' ><span class="material-symbols-outlined">
+<label className='lbpasswd' ><span className="material-symbols-outlined">
 lock
 </span><input type='password' className='input'></input></label>
 <p><button type="submit" >Login</button></p>
