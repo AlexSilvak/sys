@@ -10,7 +10,9 @@ function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState();
   
-
+  function authenticator(){
+    console.log('Atenticado com sucesso!')
+}
 
   useEffect(() => {
     fetch("http://127.0.0.1:5000/home")
@@ -48,7 +50,8 @@ person
 <label className='lbpasswd' ><span className="material-symbols-outlined">
 lock
 </span><input type='password' className='input'></input></label>
-<p><button type="submit" >Login</button></p>
+<p><button type="submit" onSubmit={authenticator}>Login</button></p>
+
 </form>
   
   
